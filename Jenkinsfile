@@ -4,7 +4,7 @@ pipeline{
         stage("build"){
             steps{
                 sh 'echo this is build stage...'
-                withMaven("Maven"){
+                withMaven(){
                     sh 'mvn clean package'
                 }
             }
@@ -12,7 +12,7 @@ pipeline{
         stage("test"){
             steps{
                 sh 'echo this is test...'
-                withMaven("Maven"){
+                withMaven(){
                     sh 'mvn test'
 
                 }

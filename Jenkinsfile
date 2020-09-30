@@ -14,6 +14,7 @@ pipeline{
                 sh 'echo this is test stage...'
                 withMaven("Maven"){
                     sh 'mvn test'
+                    
                 }
             }
         }

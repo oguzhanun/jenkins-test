@@ -11,10 +11,10 @@ pipeline{
         }
         stage("test"){
             steps{
-                sh 'echo this is test stage...'
+                sh 'echo this is test...'
                 withMaven("Maven"){
                     sh 'mvn test'
-                    
+
                 }
             }
         }
